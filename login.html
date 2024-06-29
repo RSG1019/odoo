@@ -1,0 +1,81 @@
+
+    <style> 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+form {
+    margin-left: 500px;
+    position: absolute;
+    inset: 100px;
+    border-radius: 15px 15px;
+    background-color: lightgrey;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 280px;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+input[type="text"]{
+
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(85, 45, 85);
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="password"]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(85, 45, 85);
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button[type="submit"]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(255, 181, 43);
+    color: black;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button[type="submit"]:active
+{
+    background: linear-gradient(90deg, rgb(85,45,85), lightgrey, rgb(85,45,85));
+    color: black;
+    opacity: 0.8;
+}
+::placeholder {
+    color: lightgrey;
+}
+    </style>
+<form method="POST" action="login.php">
+    <h2>Login Form</h2>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>

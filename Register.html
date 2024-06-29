@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style> 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+form {
+    margin-left: 450px;
+    position: absolute;
+    inset: 100px;
+    border-radius: 15px 15px;
+    background-color: lightgrey;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 450px;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+input[type="text"]{
+
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(85, 45, 85);
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="email"]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(85, 45, 85);
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="password"]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(85, 45, 85);
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+select {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(85, 45, 85);
+    color: lightgrey;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;   
+}
+button[type="submit"]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgb(255, 181, 43);
+    color: black;
+    padding: 5px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button[type="submit"]:active
+{
+    background: linear-gradient(90deg, rgb(85,45,85), lightgrey, rgb(85,45,85));
+    color: black;
+    opacity: 0.8;
+}
+::placeholder {
+    color: lightgrey;
+}
+    </style>
+</head>
+<body>    
+    <form method="POST" action="register.php">
+        <h2>Registration form</h2>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <select name="role">
+            <option value="select">select</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+        </select>
+        <a href="http://localhost/odoohackathon/index.html"><button type="submit">Register</button></a>
+    </form>
+    
+</body>
+</html>
